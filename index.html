@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" data-bs-theme="light">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Organizador de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class=" container-fluid text-center  " width="100%">
+
+            <div class="col-auto ">
+                <a class="navbar-brand" href="https://storyset.com/work">
+                    <img src="/img/checklist-animate.svg" alt="Work illustrations by Storyset" width="150" height="100"
+                        class="d-inline-block align-text-top">
+                </a>
+            </div>
+            <div class="col-2 ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-dark dropdown-toggle theme-icon-active" data-bs-toggle="dropdown"
+                                aria-expanded="false" aria-label="Toggle theme (dark)" id="bd-theme">
+                                <i id="bd-theme-text" class="bi bi-moon-stars-fill"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" data-bs-theme-value="light" aria-pressed="false"
+                                        href="#"><i class="bi bi-sun-fill"> Ligth</i></a></li>
+                                <li><a class="dropdown-item" data-bs-theme-value="dark" aria-pressed="false" href="#"><i
+                                            class="bi bi-moon-stars-fill"> Dark</i></a></li>
+                                <li><a class="dropdown-item" data-bs-theme-value="auto" aria-pressed="false" href="#"><i
+                                            class="bi bi-circle-half"> Auto</i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+    <div class="bloco">
+        <h1 style="font-size: 80px;">Tasks</h1>
+
+        <input type="text" id="inputTarefa" placeholder="Digite a nova tarefa">
+        <button class="mb-2" onkeydown="adicionarTarefa()" onclick="adicionarTarefa()">Adicionar Tarefa</button>
+
+        <!-- <ul id="listaTarefas"></ul> -->
+
+        <button onclick="removerTarefa()">Remover Tarefa</button>
+
+    </div>
+    <div id="listaTarefas" class="row mt-5" width="100vw">
+    </div>
+
+    <script src="script.js"></script>
+    <script src="modleDark.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
