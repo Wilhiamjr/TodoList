@@ -1,4 +1,4 @@
 # TodoList
 Organizador de Tarefas <br>
 [Link para TODOLIST](https://wilhiamjr.github.io/TodoList/)<br>
-[![Alt text](https://assets.digitalocean.com/articles/alligator/boo.svg)](https://digitalocean.com)
+[![TodoList](/img/Captura de Tela 2023-10-03 às 09.15.38.png)]
